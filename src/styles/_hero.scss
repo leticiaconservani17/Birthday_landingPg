@@ -1,0 +1,47 @@
+@import 'variable.scss';
+
+.hero{
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url(../images/hero_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 3px 3px 5px $purple;
+
+    &__title{
+        margin-bottom: 40px;
+
+        
+        &--medium{
+            font-size: 80px;
+        }
+
+        &--big{
+            font-size: 120px;
+            color: $purple;
+        }
+
+        span{
+            font-family: 'Lilita One', sans-serif;
+        }
+    }
+
+
+    @media (max-width: 640px) {
+        padding: 40px 0;
+        &__title{
+            margin-bottom: 30px;
+    
+            
+            &--medium{
+                font-size: 50px;
+            }
+    
+            &--big{
+                font-size: 70px;
+                color: $purple;
+            }
+        }
+
+    }
+}

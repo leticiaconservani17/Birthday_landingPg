@@ -1,0 +1,46 @@
+@import '../variable.scss';
+
+.infos {
+    padding: 16px 24px;
+    background-color: #17003B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__info{
+        display: flex;
+        gap: 40px;
+
+        &--item {
+            font-size: 14px;
+
+            b{
+                font-size: 18px;
+                display: block;
+                color: $cianBlue;
+            }
+            
+            span{
+                color: $neonPink;
+            }
+        }
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+
+        &__info{
+            display: block;
+
+            &--item {
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px){
+        &__info {
+            gap: 16px;
+        }
+    }
+}

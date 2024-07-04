@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letícia Birthday</title>
+    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&family=Lilita+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <p class="hero__title">
+                <span class="hero__title--medium" >
+                    Letícia
+                </span>
+                <br>
+                <span class="hero__title--big">
+                    Birthday
+                </span>
+            </p>
+    
+            <div class="infos">
+                <ul class="infos__info">
+                    <li class="infos__info--item">
+                        <b>
+                            Local
+                        </b>
+                        <span>
+                            Hogwarts - Inglaterra - Leavesden
+                        </span>
+                    </li>
+                    <li class="infos__info--item">
+                        <b>
+                            Hora
+                        </b>
+                        <span>
+                            17h
+                        </span>
+                    </li>
+                    <li class="infos__info--item">
+                        <b>
+                            Data
+                        </b>
+                        <span>
+                            17/07
+                        </span>
+                    </li>
+                </ul>
+                <a href="" class="button button--primary">
+                    Confirme sua presença
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="timing" >
+        <div class="container" data-aos="fade-down">
+
+            <div class="timing__head">
+                <div class="timing__title">
+                    <p>
+                        Contagem regressiva
+                    </p>
+                </div>
+    
+                <img src="./images/cupcake.png" alt="">
+            </div>
+
+            <div class="timing__counting">
+                <ul>
+                    <li>
+                        <p id="days"></p>
+                        <span>
+                            DIAS
+                        </span>
+                    </li>
+                    <li>
+                        <p id="hours">
+                            00 
+                        </p>
+                        <span>
+                            HORAS
+                        </span>
+                    </li>
+                    <li>
+                        <p id="minuts">
+                            00 
+                        </p>
+                        <span>
+                            MINUTOS
+                        </span>
+                    </li>
+                    <li>
+                        <p id="seconds">
+                            00 
+                        </p>
+                        <span>
+                            SEGUNDOS
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="confirm">
+        <div class="container" data-aos="fade-down">
+            <h2 class="confirm__title">
+                Confirme sua Presença
+            </h2>
+            <div class="confirm__form_content">
+                <form action="submit_form.php" method="post">
+                    <label for="name">
+                        Nome:
+                    </label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">
+                        Email:
+                    </label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="guests">
+                        Número de Convidados:
+                    </label>
+                    <input type="number" id="guests" name="guests" min="1" max="10" required>
+        
+                    <button type="submit" class="button button--primary">Enviar</button>
+                </form>
+                <img class="confirm__form_content--image" src="./images/vecteezy_party-cornet-with-confetti-neon_24090331.png" alt="">
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

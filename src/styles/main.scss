@@ -1,0 +1,25 @@
+@import '_hero.scss';
+@import 'reset.scss';
+@import './components/infos';
+@import './components/buttons';
+@import './components/confirm';
+@import './components/timing';
+
+
+@import 'variable.scss';
+
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    }
+
+}

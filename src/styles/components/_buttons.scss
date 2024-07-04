@@ -1,0 +1,28 @@
+@import '../variable.scss';
+
+.button {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+
+    &--primary{
+        color: $neonPink;
+        background-color: $cianBlue;
+        border-radius: 20px;
+        border: none;
+    }
+
+    @media (max-width: 640px) {
+        display: flex;
+        display: block;
+        width: 100%;
+    }
+
+    @media (max-width: 1024px) {
+        display: flex;
+        align-items: center;
+    }
+}

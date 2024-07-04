@@ -1,0 +1,75 @@
+.confirm {
+    padding: 80px 0;
+    color: white;
+    background-image: radial-gradient(ellipse at top, #490061, black);
+
+    &__title{
+        font-size: 40px;
+        padding-bottom: 40px;
+        font-family: 'Lilita One' , sans-serif;
+    }
+
+    &__form_content {
+        display: flex;
+        justify-content: space-between;
+
+        form {
+            width: 50%;
+    
+            label {
+                display: block;
+                margin: 10px 0 5px;
+            }
+    
+            input {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+    
+            button {
+                width: 100%;
+                padding: 15px;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+
+            button:hover{
+                background-color: $cianBlueHover;
+            }
+        }
+
+        &--image{
+            max-width: 50%;
+            height: 350px;
+        }
+    }
+
+    @media (max-width: 640px) {
+
+
+        &__title{
+            font-size: 30px;
+        }
+
+        &__form_content {
+            padding: 10px;
+            form {
+                width: 100%;
+
+                button {
+                    justify-content: center;
+                }
+            }
+
+            img{
+                display: none;
+            }
+        }
+
+    }
+
+    
+}
