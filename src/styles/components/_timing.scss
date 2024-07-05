@@ -3,7 +3,7 @@
 .timing {
     color: #fff;
     padding: 80px 0;
-    background-image: radial-gradient(ellipse at bottom, #490061, black);
+    background-image: radial-gradient($blackBlue, black);
     &__title{
         p{
             text-align: center;
@@ -54,7 +54,7 @@
 
                 p{
                     color: $cianBlue;
-                    padding: 20px;
+                    padding: 20px 0 10px 0;
                     font-size: 45px;
                     display: flex;
                     flex-direction: column;
@@ -66,7 +66,20 @@
                     font-weight: bold;
                     color: #fff;
                     font-size: 18px;
-                    margin-top: 10px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 640px) {
+        &__counting {
+            ul{
+                flex-direction: column;
+                align-items: center;
+
+                li{
+                    margin-bottom: 16px;
                 }
             }
         }

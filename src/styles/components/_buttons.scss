@@ -19,10 +19,12 @@
         display: flex;
         display: block;
         width: 100%;
+        justify-content: center;
     }
 
     @media (max-width: 1024px) {
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 }

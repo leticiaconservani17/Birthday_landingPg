@@ -1,7 +1,9 @@
+@import '../variable.scss';
+
 .confirm {
     padding: 80px 0;
     color: white;
-    background-image: radial-gradient(ellipse at top, #490061, black);
+    background-image: radial-gradient(ellipse at top, $blackBlue, black);
 
     &__title{
         font-size: 40px;
@@ -48,10 +50,11 @@
     }
 
     @media (max-width: 640px) {
-
-
+        padding: 0 0px 50px 0;
         &__title{
             font-size: 30px;
+            margin: 0 16px;
+            padding: 30px 0 0 0;
         }
 
         &__form_content {
@@ -61,6 +64,7 @@
 
                 button {
                     justify-content: center;
+                    text-align: center;
                 }
             }
 

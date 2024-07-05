@@ -1,0 +1,75 @@
+@import '../variable.scss';
+
+.activities {
+    color: #fff;
+    background-image: radial-gradient(ellipse at bottom, $blackBlue, black);
+    
+    &__head{
+        padding-top: 60px;
+        display: flex;
+        align-items: center;
+
+
+        &--title {
+            font-family: 'Lilita One', sans-serif;
+            font-size: 40px;
+            margin-bottom: 20px;
+            text-align: left;
+            padding: 50px 0;
+        }
+
+        &--img {
+            padding-left: 50px;
+            width: 200px;
+        }
+    }
+    
+    &__list {
+        list-style: none;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__item {
+        padding: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+
+        img{
+            width: 150px;
+            margin-bottom: 10px;
+        }
+
+        b {
+            display: block;
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 1rem;
+            margin: 0;
+        }
+    }
+
+    @media (max-width: 640px) {
+        &__head {
+            padding: 0;
+            flex-direction: column-reverse;
+            &--img{
+                padding: 0;
+            }
+        }
+
+        &__list{
+            padding: 0;
+            flex-direction: column;
+        }
+
+        &__item {
+            padding: 0 40px 0 40px;
+        }
+    }
+}
